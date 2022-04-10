@@ -14,8 +14,8 @@ We used two python files today, [`app.py`](./app.py) and [`api.py`](./api.py)
     - [x] Web Service APIs
     - [x] REST APIs
     - [x] Examples
-- [ ] How do I use an API
-    - [ ] `requests` library
+- [x] How do I use an API
+    - [x] `requests` library
 - [ ] ~~How do I use an API with my Discord Bot?~~
     - Not done in day 2 - moved to day 3
 
