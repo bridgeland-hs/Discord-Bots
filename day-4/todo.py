@@ -29,6 +29,16 @@ async def list_todos(message):
         'fields': [],
     }
     
+    index = 0
+    for todo in todos:
+        checked = ':white_check_mark:' if todo['completed'] else ''
+        embed['fields'].append({
+            'name': f'{index + 1}. {checked} {todo["name"]}',
+            'value': f'Added By {todo["author"]}',
+        })
+        index += 1
+        
+    await message.channel.send(embed=discord.Embed.from_dict(embed))
     
     
 async def add_todo(message, author, name):
