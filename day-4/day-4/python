@@ -1,0 +1,3 @@
+#! /bin/bash
+
+TOKEN=ODAyOTU1MTAxNzU2MzI1OTM5.YA2wNg.vAPxhk6cchzxM27_ujulvVB2JUk python3 $1
