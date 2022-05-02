@@ -13,9 +13,9 @@ We used two python files today, [`app.py`](./app.py) and [`api.py`](./api.py)
 - [x] What is an API?
     - [x] Web Service APIs
     - [x] REST APIs
-    - [ ] Examples
-- [ ] How do I use an API
-    - [ ] `requests` library
+    - [x] Examples
+- [x] How do I use an API
+    - [x] `requests` library
 - [ ] ~~How do I use an API with my Discord Bot?~~
     - Not done in day 2 - moved to day 3
 
@@ -117,6 +117,40 @@ JSON is a way to share data between different applications on
 The two example APIs that we'll be using are
 
 - [InspiroBot](https://inspirobot.me/api?generate=true) - Returns the URL in plaintext
+<<<<<<< HEAD
 - [Quote Garden](https://quote-garden.herokuapp.com/api/v3/quotes/random) - Returns quote data as JSON
 
 
+=======
+  - When you go to this url, it returns a plaintext url
+- [Quote Garden](https://quote-garden.herokuapp.com/api/v3/quotes/random) - Returns quote data as JSON
+  - When you go to this url, it returns JSON data
+
+## Using an API
+
+In Python, to use an API, we'll use the `requests` package
+
+Install it like you did with the `discord.py` package with the packages tab on the left
+
+and then you can import it using
+
+```py
+import requests
+```
+
+To make a GET request to an API, use the following code
+
+```py
+import requests
+
+url = 'YOUR API URL'
+
+res = requests.get(url)
+
+# If the API returns plaintext, use
+data = res.text
+
+# If the API returns JSON, use
+data = res.json()
+```
+>>>>>>> 85764a1778c2287e67ff25e53a6497400da0dcb3
